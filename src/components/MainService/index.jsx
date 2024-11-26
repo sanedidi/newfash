@@ -1,9 +1,12 @@
 import React from 'react'
 import s from './styles.module.scss'
-import { Box, Button, Container, Flex, Image, Text } from '@chakra-ui/react'
+import { Box, Button, Container, Flex, Grid, Image, Text } from '@chakra-ui/react'
 import pc1 from '../../assets/hair5.jpg'
 import pc2 from '../../assets/makeup12.jpg'
 import pc3 from '../../assets/nail3.jpg'
+import pc4 from '../../assets/makeup1.jpg'
+import pc5 from '../../assets/man.jpg'
+import pc6 from '../../assets/missionphoto1.jpg'
 const MainService = () => {
     const service_list = [
         {
@@ -15,6 +18,15 @@ const MainService = () => {
         {
             photo: pc3, title: "HairCare", desc: "Haircut and Styling", type: "nail"
         },
+        {
+            photo: pc4, title: "HairCare", desc: "Haircut and Styling", type: "nail"
+        },
+        {
+            photo: pc5, title: "HairCare", desc: "Haircut and Styling", type: "nail"
+        },
+        {
+            photo: pc6, title: "HairCare", desc: "Haircut and Styling", type: "nail"
+        },
 
     ]
     return (
@@ -24,7 +36,7 @@ const MainService = () => {
                     <Text className={s.mainser__title}>
                         Our Services
                     </Text>
-                    <Flex gap={6}>
+                    <Grid gridTemplateColumns={"1fr 1fr 1fr"} gap={6}>
                         {service_list.map((el, i) => (
                             <Flex gap={2} flexDir={"column"} alignItems={"center"} className={s.mainser__box} key={i}>
                                 <Image src={el.photo} alt={el.title} />
@@ -37,7 +49,6 @@ const MainService = () => {
                                             {el.desc}
                                         </Text>
                                     </Flex>
-
                                     <Button w={"100%"}>
                                         Записаться
                                     </Button>
@@ -45,7 +56,7 @@ const MainService = () => {
                                 </Flex>
                             </Flex>
                         ))}
-                    </Flex>
+                    </Grid>
                 </Flex>
 
             </Container>
