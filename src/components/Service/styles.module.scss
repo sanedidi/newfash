@@ -1,0 +1,30 @@
+.service {
+    background-color: #9f9f9f;
+    height: 100vh;
+
+    &__init {
+        border: 1px solid #000;
+        padding: 76px 78px;
+    }
+
+    &__box {
+        height: max-content;
+        width: 90%;
+        padding: 10px;
+        background-color: #f7f6f6f6;
+    }
+
+    &__left {
+        font-size: 32px;
+        font-family: Dream Avenue;
+        text-transform: uppercase;
+
+    }
+
+    &__right {
+        font-family: Dream Avenue;
+        font-size: 18px;
+        letter-spacing: 1.2px;
+        line-height: 1.5;
+    }
+}

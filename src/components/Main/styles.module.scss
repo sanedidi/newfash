@@ -1,0 +1,24 @@
+.banner {
+    background-image: url("../../assets/bannerimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 105vh;
+    width: 100vw;
+    padding: 100px;
+
+    &__text {
+        font-family: Dream Avenue;
+        font-size: clamp(1rem, 0.807rem + 0.97vw, 1.531rem);
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &__title {
+        font-size: clamp(3.125rem, 1.534rem + 7.95vw, 7.5rem);
+        font-family: Dream Avenue;
+        color: #fff;
+    }
+}
