@@ -1,0 +1,34 @@
+.main {
+    position: relative;
+}
+
+.contacts {
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    z-index: 999;
+    padding: 20px;
+width: 400px;
+
+    &__box {
+        border: 1px solid red;
+        padding: 20px;
+
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-family: Dream Avenue;
+    }
+
+    &__sub_title {
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1.4;
+        font-family: "Roboto Condensed";
+        text-align: center;
+    }
+}

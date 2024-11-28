@@ -12,6 +12,7 @@
   "dependencies": {
     "@chakra-ui/react": "^3.2.0",
     "@emotion/react": "^11.13.5",
+    "@pbe/react-yandex-maps": "^1.2.5",
     "@react-icons/all-files": "^4.1.0",
     "clsx": "^2.1.1",
     "i18next": "^23.16.8",

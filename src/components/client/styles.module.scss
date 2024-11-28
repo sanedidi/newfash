@@ -1,0 +1,27 @@
+.clients {
+    margin: 0 0 80px ;
+    &__title {
+        font-family: Dream Avenue;
+        font-size: 40px;
+        text-align: center;
+        line-height: 1;
+    }
+
+    &__text {
+        font-family: "Roboto Condensed";
+        font-size: 18px;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+
+    &__sub_title {
+        font-family: Dream Avenue;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: auto;
+        font-size: 25px;
+    }
+}

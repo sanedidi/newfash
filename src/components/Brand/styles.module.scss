@@ -1,0 +1,22 @@
+.brand {
+    padding: 70px 0;
+
+    &__top {
+        font-family: "Roboto Condensed";
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__mid {
+        font-family: Dream Avenue;
+        text-align: center;
+        font-size: 100px;
+        text-transform: uppercase;
+    }
+
+    &__bottom {
+        font-family: "Roboto Condensed";
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
