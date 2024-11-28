@@ -8,13 +8,13 @@ const Contact = () => {
             <YMaps>
                 <Map
                     defaultState={{
-                        center: [55.751574, 37.573856],
-                        zoom: 9,
+                        center: [41.2995, 69.2401],
+                        zoom: 12,
                     }}
                     width="100%"
                     height="100%"
                 >
-                    <Placemark geometry={[55.751574, 37.573856]} />
+                    <Placemark geometry={[41.311899, 69.290588]} />
                 </Map>
             </YMaps>
             <Flex className={s.contacts} flexDir={"column"}>
