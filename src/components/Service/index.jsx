@@ -1,11 +1,11 @@
 import React from 'react'
 import s from './styles.module.scss'
-import { Box, Flex, Grid, Text } from '@chakra-ui/react'
+import { Flex, Grid, Text } from '@chakra-ui/react'
 const Service = () => {
     return (
         <Flex className={s.service}>
             <Flex className={s.service__box} justifyContent={"center"} m={"auto"} alignItems={"center"}>
-                <Grid className={s.service__init} gridTemplateColumns={"1fr 1fr"} gap={40} >
+                <Grid className={s.service__init} gridTemplateColumns={"1fr 1fr"}>
                     <Text className={s.service__left}>
                         We are a <br />
                         full-service <br /> salon.

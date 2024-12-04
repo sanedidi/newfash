@@ -11,8 +11,14 @@ const Contact = () => {
                         center: [41.2995, 69.2401],
                         zoom: 12,
                     }}
+                    options={{
+                        suppressMapOpenBlock: true,
+                        yandexMapDisablePoiInteractivity: true, // Disables interaction with points of interest
+                    }}
+                    modules={["control.ZoomControl", "control.FullscreenControl"]}
                     width="100%"
                     height="100%"
+                    theme="dark"
                 >
                     <Placemark geometry={[41.311899, 69.290588]} />
                 </Map>

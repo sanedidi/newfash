@@ -29,4 +29,14 @@
         font-size: 23px;
         font-family: Dream Avenue;
     }
+
+    &__grid {
+        @media (max-width:768px) {
+            grid-template-columns: 1fr 1fr !important;
+        }
+
+        @media (max-width:435px) {
+            grid-template-columns: 1fr !important;
+        }
+    }
 }

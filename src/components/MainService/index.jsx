@@ -36,7 +36,7 @@ const MainService = () => {
                     <Text className={s.mainser__title}>
                         Our Services
                     </Text>
-                    <Grid gridTemplateColumns={"1fr 1fr 1fr"} gap={6}>
+                    <Grid className={s.mainser__grid} gridTemplateColumns={"1fr 1fr 1fr"} gap={6}>
                         {service_list.map((el, i) => (
                             <Flex gap={2} flexDir={"column"} alignItems={"center"} className={s.mainser__box} key={i}>
                                 <Image src={el.photo} alt={el.title} />

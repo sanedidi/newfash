@@ -2,7 +2,7 @@
     text-align: center;
 
     &__title {
-        font-size: 60px;
+        font-size: clamp(1.563rem, 0.767rem + 3.98vw, 3.75rem);
         font-family: Dream Avenue;
     }
 
@@ -20,16 +20,21 @@
     }
 
     &__text {
-        font-size: 30px;
+        font-size: clamp(1.188rem, 0.938rem + 1.25vw, 1.875rem);
         font-family: Dream Avenue;
         font-weight: 600;
         letter-spacing: 2.4px;
     }
 
     &__ma {
-        padding: 40px;
+        padding: clamp(1.563rem, 1.222rem + 1.7vw, 2.5rem);
         background-color: #9f9f9f;
     }
 
-    &__box {}
+    &__grid {
+        @media (max-width:768px) {
+            display: flex !important;
+            flex-direction: column-reverse;
+        }
+    }
 }

@@ -4,7 +4,13 @@
 
     &__init {
         border: 1px solid #000;
-        padding: 76px 78px;
+        padding: clamp(1.625rem, 0.443rem + 5.91vw, 4.875rem);
+
+        @media (max-width:768px) {
+            grid-template-columns: 1fr !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
     }
 
     &__box {

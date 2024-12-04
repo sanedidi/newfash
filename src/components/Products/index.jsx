@@ -14,8 +14,8 @@ const Prods = () => {
     return (
         <Box className={s.prods}>
             <Container>
-                <Flex p={100} justifyContent={"center"} alignItems={"center"}>
-                    <Grid w={"100%"} gridTemplateColumns={"1fr 1fr"}>
+                <Flex p={"clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem)"} justifyContent={"center"} alignItems={"center"}>
+                    <Grid className={s.prods__grid} w={"100%"} gridTemplateColumns={"1fr 1fr"}>
                         <Flex className={s.prods__ma}>
                             <Flex w={"100%"} flexDir={"column"} justifyContent={"center"} alignItems={"center"} className={s.prods__box}>
                                 <Text className={s.prods__title}>
@@ -33,7 +33,7 @@ const Prods = () => {
                                 </Flex>
                             </Flex>
                         </Flex>
-                        <Image w={"100%"} src={prodImage} />
+                        <Image h={"100%"} w={"100%"} src={prodImage} />
                     </Grid>
                 </Flex>
             </Container>
